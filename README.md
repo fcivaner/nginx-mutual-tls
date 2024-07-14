@@ -2,7 +2,7 @@
 
 These configuration scripts are created as a test implementation to demonstrate an example Mutual TLS configuration for NGINX.
 
-Mutual TLS means the both sides of the connection will check if each other's keys and certificates are coherent before establishing a connection. This means the server will also make sure that a client is authentic, compared to a regular TLS connection, in which only the party that is initiating the connection performs this check. This adds an extra layer of security for the server side.
+Mutual TLS is a security configuration between two parties in which the both sides of the connection will check if each other's keys and certificates are coherent before establishing a connection. This means the server will also make sure that a client is authentic, compared to a regular TLS connection, in which only the party that is initiating the connection performs this check. This adds an extra layer of security for the server side.
 
 An example use case for mutual TLS is middleware servers communicating with each other. As no unknown third party is expected to initiate a connection, these servers can be configured to communicate securely using mutual TLS.
 
